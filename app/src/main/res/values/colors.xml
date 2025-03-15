@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mediumGrey">#535252</color>
+    <!-- Light Theme Colors -->
+    <color name="primary">#0c51d2</color>
+    <color name="onPrimary">#ffffff</color>
+    <color name="primaryContainer">#386cec</color>
+    <color name="onPrimaryContainer">#fefcff</color>
+
+    <color name="second">#4700af</color>
+    <color name="onSecond">#ffffff</color>
+    <color name="secondContainer">#6200ea</color>
+    <color name="onSecondContainer">#8C69E4</color>
+
+    <color name="teri">#0060ac</color>
+    <color name="onTeri">#ffffff</color>
+    <color name="teriContainer">#60a5fa</color>
+    <color name="onTeriContainer">#003a6b</color>
+
+    <color name="error">#ba1a1a</color>
+    <color name="onError">#ffffff</color>
+    <color name="errorContainer">#ffdad6</color>
+    <color name="onErrorContainer">#93000a</color>
+
+    <color name="background">#f6faf8</color>
+    <color name="onBackground">#171d1b</color>
+    <color name="surface">#f6faf8</color>
+    <color name="onSurface">#171d1b</color>
+    <color name="surfaceVariant">#DFE8E3</color>
+    <color name="onSurfaceVariant">#3d4946</color>
+    <color name="outline">#6d7a77</color>
+    <color name="inverseSurface">#2e3038</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="primaryDark">#b4c5ff</color>
+    <color name="onPrimaryDark">#002a78</color>
+    <color name="primaryContainerDark">#618bff</color>
+    <color name="onPrimaryContainerDark">#000827</color>
+
+    <color name="secondDark">#cfbcff</color>
+    <color name="onSecondDark">#3a0092</color>
+    <color name="secondContainerDark">#6200ea</color>
+    <color name="onSecondContainerDark">#6200ea</color>
+
+    <color name="teriDark">#a4c9ff</color>
+    <color name="onTeriDark">#00315d</color>
+    <color name="teriContainerDark">#60a5fa</color>
+    <color name="onTeriContainerDark">#cfbcff</color>
+
+    <color name="errorDark">#ffb4ab</color>
+    <color name="onErrorDark">#690005</color>
+    <color name="errorContainerDark">#93000a</color>
+    <color name="onErrorContainerDark">#ffdad6</color>
+
+    <color name="backgroundDark">#0f1413</color>
+    <color name="onBackgroundDark">#dfe4e1</color>
+    <color name="surfaceDark">#0f1413</color>
+    <color name="onSurfaceDark">#dfe4e1</color>
+    <color name="surfaceVariantDark">#262b2a</color>
+    <color name="onSurfaceVariantDark">#bcc9c5</color>
+
+    <color name="outlineDark">#E7ECE9</color>
+    <color name="outlineVariantDark">#dfe4e1</color>
+    <color name="inverseSurfaceDark">#e2e2ed</color>
+    <color name="transparent">#00000000</color>
+    <color name="cartColor">#BCCCCCD3</color>
+
+</resources>

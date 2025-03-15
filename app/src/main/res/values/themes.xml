@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Homes" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.Homes" parent="Base.Theme.Homes">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/second</item>
+        <item name="colorOnSecondary">@color/onSecond</item>
+        <item name="colorSecondaryContainer">@color/secondContainer</item>
+        <item name="colorOnSecondaryContainer">@color/onSecondContainer</item>
+
+        <!-- Tertiary colors -->
+        <item name="colorTertiary">@color/teri</item>
+        <item name="colorOnTertiary">@color/onTeri</item>
+        <item name="colorTertiaryContainer">@color/teriContainer</item>
+        <item name="colorOnTertiaryContainer">@color/onTeriContainer</item>
+
+        <!-- Error colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+        <item name="colorErrorContainer">@color/errorContainer</item>
+        <item name="colorOnErrorContainer">@color/onErrorContainer</item>
+
+        <!-- Background & Surface colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorSurfaceInverse">@color/inverseSurface</item>
+        <item name="android:statusBarColor">@color/black</item>
+
+    </style>
+</resources>

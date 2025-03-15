@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/home_outline"
+        android:title="@string/nav_home"
+
+
+        />
+    <item
+        android:id="@+id/navMap"
+        android:icon="@drawable/map_outline"
+        android:title="@string/nav_location"
+
+        />
+    <item
+        android:id="@+id/navExplore"
+        android:icon="@drawable/globe_2_outline"
+        android:title="@string/nav_explore"
+
+        />
+    <item
+        android:id="@+id/navMessage"
+        android:icon="@drawable/message_circle_outline"
+        android:title="@string/nav_message"
+
+        />
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/person_outline"
+        android:title="@string/nav_profile"
+
+        />
+
+</menu>

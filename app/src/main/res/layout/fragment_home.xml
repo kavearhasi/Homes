@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.fragments.HomeFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/headerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/headerGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@id/searchBar"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/searchBar"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchBar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/headerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:text="@string/header_info"
+        android:textColor="@color/mediumGrey"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toTopOf="@id/more"
+        app:layout_constraintEnd_toEndOf="@id/searchBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:text="@string/more"
+        app:layout_constraintBottom_toTopOf="@id/sliderIndicator"
+        app:layout_constraintStart_toStartOf="@id/headerText"
+        app:layout_constraintTop_toBottomOf="@id/headerText" />
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorSurface"
+        android:hint="@string/say_something"
+        android:minHeight="0dp"
+        app:layout_constraintEnd_toStartOf="@id/cart"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@id/profileIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/shopping_cart_outline"
+        android:tint="?colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="@id/searchBar"
+        app:layout_constraintDimensionRatio="1:0.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.1"
+        app:layout_constraintStart_toEndOf="@id/searchBar"
+        app:layout_constraintTop_toTopOf="@id/searchBar" />
+
+    <LinearLayout
+        android:id="@+id/sliderIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/headerMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/indicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="1sp"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="1sp"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/indicator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="1sp"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/indicator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="1sp"
+            android:scaleType="centerInside"
+            android:src="@drawable/outline_circle" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/headerGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/headerMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="?android:colorBackground"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerMiddle"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/cameraIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/camera"
+                android:tint="@color/primary"
+                app:layout_constraintBaseline_toBaselineOf="@id/bottleIc"
+                app:layout_constraintBottom_toTopOf="@id/carIc"
+                app:layout_constraintEnd_toStartOf="@id/bottleIc"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/entertainmentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/entertainment"
+                app:layout_constraintBottom_toTopOf="@id/carIc"
+                app:layout_constraintEnd_toEndOf="@id/cameraIc"
+                app:layout_constraintStart_toStartOf="@id/cameraIc"
+                app:layout_constraintTop_toBottomOf="@id/cameraIc" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/carIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/car"
+                android:tint="@color/teri"
+                app:layout_constraintEnd_toStartOf="@id/milkIc"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/entertainmentLabel"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/travelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/travel"
+                app:layout_constraintEnd_toEndOf="@id/carIc"
+                app:layout_constraintStart_toStartOf="@id/carIc"
+                app:layout_constraintTop_toBottomOf="@id/carIc" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bottleIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/milk"
+                android:tint="@color/second"
+                app:layout_constraintBaseline_toBaselineOf="@id/cameraIc"
+                app:layout_constraintBottom_toTopOf="@id/juiceLabel"
+                app:layout_constraintEnd_toStartOf="@id/buildingIc"
+                app:layout_constraintStart_toEndOf="@id/cameraIc"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/juiceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/juices"
+                app:layout_constraintBottom_toTopOf="@id/milkIc"
+                app:layout_constraintEnd_toEndOf="@id/bottleIc"
+                app:layout_constraintStart_toStartOf="@id/bottleIc"
+                app:layout_constraintTop_toBottomOf="@id/bottleIc" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/milkIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/bottle"
+                android:tint="@color/primary"
+                app:layout_constraintBottom_toTopOf="@id/beverageLabel"
+                app:layout_constraintEnd_toStartOf="@id/burgerIc"
+                app:layout_constraintStart_toEndOf="@id/carIc"
+                app:layout_constraintTop_toBottomOf="@id/juiceLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/beverageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/beverage"
+                app:layout_constraintEnd_toEndOf="@id/milkIc"
+                app:layout_constraintStart_toStartOf="@id/milkIc"
+                app:layout_constraintTop_toBottomOf="@id/milkIc" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/buildingIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/buildings"
+                android:tint="@color/teri"
+                app:layout_constraintBaseline_toBaselineOf="@id/bottleIc"
+                app:layout_constraintBottom_toTopOf="@id/buildingLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bottleIc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/buildingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/rental"
+                app:layout_constraintBottom_toTopOf="@id/burgerIc"
+                app:layout_constraintEnd_toEndOf="@id/buildingIc"
+                app:layout_constraintStart_toStartOf="@id/buildingIc"
+                app:layout_constraintTop_toBottomOf="@id/buildingIc" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/burgerIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/burger"
+                android:tint="@color/second"
+                app:layout_constraintBottom_toTopOf="@id/burgerLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/milkIc"
+                app:layout_constraintTop_toBottomOf="@id/buildingLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/burgerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/food"
+                app:layout_constraintEnd_toEndOf="@id/burgerIc"
+                app:layout_constraintStart_toStartOf="@id/burgerIc"
+                app:layout_constraintTop_toBottomOf="@id/burgerIc" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerSlider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/transparent"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintBottom_toTopOf="@id/explosionToday"
+                app:layout_constraintDimensionRatio="2:0.7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/beverageLabel" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextSlide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:minWidth="0dp"
+                android:minLines="0"
+                app:icon="@drawable/arrow_circle_right"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/_35sdp"
+                app:iconTint="@color/second"
+                app:layout_constraintBottom_toBottomOf="@id/bannerSlider"
+                app:layout_constraintEnd_toEndOf="@id/bannerSlider"
+                app:layout_constraintTop_toTopOf="@id/bannerSlider" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/decore"
+                android:layout_width="4dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="@id/explosionToday"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/explosionToday" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/explosionToday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginStart="8dp"
+                android:text="@string/explosion_today"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/explosionSlider"
+                app:layout_constraintEnd_toStartOf="@id/nextExplosion"
+                app:layout_constraintStart_toEndOf="@id/decore"
+                app:layout_constraintTop_toBottomOf="@id/bannerSlider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextExplosion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:minWidth="0dp"
+                android:minLines="0"
+                app:icon="@drawable/arrow_ios_forward_outline"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="?colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/explosionToday"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/explosionToday"
+                app:layout_constraintTop_toTopOf="@id/explosionToday" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/explosionSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/explosionToday" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

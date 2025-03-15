@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homes_nav"
+    app:startDestination="@id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.example.homes.main.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navHome_to_navMap"
+            app:destination="@id/navMap" />
+        <action
+            android:id="@+id/action_navHome_to_navExplore"
+            app:destination="@id/navExplore" />
+        <action
+            android:id="@+id/action_navHome_to_navMessage"
+            app:destination="@id/navMessage" />
+        <action
+            android:id="@+id/action_navHome_to_navProfile"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navHome_to_navProfile2"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navHome_to_navProfile3"
+            app:destination="@id/navProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navMap"
+        android:name="com.example.homes.main.fragments.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_navMap_to_navHome"
+            app:destination="@id/navHome" />
+        <action
+            android:id="@+id/action_navMap_to_navExplore"
+            app:destination="@id/navExplore" />
+        <action
+            android:id="@+id/action_navMap_to_navProfile"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navMap_to_navProfile2"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navMap_to_navProfile3"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navMap_to_navMessage"
+            app:destination="@id/navMessage" />
+    </fragment>
+    <fragment
+        android:id="@+id/navExplore"
+        android:name="com.example.homes.main.fragments.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_navExplore_to_navHome"
+            app:destination="@id/navHome" />
+        <action
+            android:id="@+id/action_navExplore_to_navMap"
+            app:destination="@id/navMap" />
+        <action
+            android:id="@+id/action_navExplore_to_navProfile"
+            app:destination="@id/navProfile" />
+        <action
+            android:id="@+id/action_navExplore_to_navMessage"
+            app:destination="@id/navMessage" />
+    </fragment>
+    <fragment
+        android:id="@+id/navMessage"
+        android:name="com.example.homes.main.fragments.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_navMessage_to_navHome"
+            app:destination="@id/navHome" />
+        <action
+            android:id="@+id/action_navMessage_to_navMap"
+            app:destination="@id/navMap" />
+        <action
+            android:id="@+id/action_navMessage_to_navExplore"
+            app:destination="@id/navExplore" />
+        <action
+            android:id="@+id/action_navMessage_to_navProfile"
+            app:destination="@id/navProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navProfile"
+        android:name="com.example.homes.main.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navProfile_to_navHome"
+            app:destination="@id/navHome" />
+        <action
+            android:id="@+id/action_navProfile_to_navMap"
+            app:destination="@id/navMap" />
+        <action
+            android:id="@+id/action_navProfile_to_navExplore"
+            app:destination="@id/navExplore" />
+        <action
+            android:id="@+id/action_navProfile_to_navMessage"
+            app:destination="@id/navMessage" />
+    </fragment>
+
+</navigation>

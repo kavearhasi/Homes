@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Homes</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_location">Location</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_message">Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="work_in_progress">work in progress   !</string>
+    <string name="say_something">say something</string>
+    <string name="header_info">Quality Goods waiting for you to choose.Carefully Designed and Super Flexible !</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="more">More</string>
+    <string name="explosion_today">Explosion Today</string>
+    <string name="share">share</string>
+    <string name="travel">Travel</string>
+    <string name="juices">Juices</string>
+    <string name="beverage">Beverage</string>
+    <string name="rental">Rental</string>
+    <string name="food">Food</string>
+</resources>
